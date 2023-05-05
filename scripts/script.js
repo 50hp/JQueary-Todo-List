@@ -46,7 +46,6 @@ function removeItem(){
 
 }
 function countValue(){
-    $('#countValue').empty();
     $('#countValue').text($('.listItem').length);
 }
 
