@@ -6,7 +6,7 @@ function onReady() {
 
         //calls handleSubmit on submitBtn click.
         $('#submitBtn').on('click',handleSubmit);
-        $('#listArea').on('click', '.listItem', removeItem);
+        $('#listArea').on('click', '.todoBtn', removeItem);
 }
 
 
@@ -39,7 +39,7 @@ function handleSubmit(event) {
 }
 
 function removeItem(){
-        $(this).remove();
+        $(this).parent().remove();
         countValue();
 
 
